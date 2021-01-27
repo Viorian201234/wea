@@ -380,7 +380,7 @@ async function starts() {
 					ownerB: '[❗] Perintah ini hanya bisa di gunakan oleh owner bot! ❌',
 					admin: '[❗] Perintah ini hanya bisa di gunakan oleh admin group! ❌',
 					Badmin: '[❗] Perintah ini hanya bisa di gunakan ketika bot menjadi admin! ❌',
-                                        daftarB: `──「 BELUM DAPTAL 」──\nHalo kak dkjal !\nKamu belum Daftar nih, daftar dlu ngab! \n\nPerintah : ${prefix}daftar nama|umur\nContoh : ${prefix}daftar Udin ganteng banget|16`,
+                                        daftarB: `──「 BELUM DAFTAR 」──\nHalo kakak (≧▽≦) !\nKamu belum Daftar nih, daftar dulu yuk(つ≧▽≦)つ! \n\nPerintah : ${prefix}daftar nama|umur\nContoh : ${prefix}daftar Pudidin wkwk|16`,
 				}
 			}
     			const apakah = ['Ya','Tidak']
