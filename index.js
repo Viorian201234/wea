@@ -18,7 +18,7 @@ const {
     processTime,
 } = require('@adiwajshing/baileys')
 
-// Muat File Js
+// Load Js File
 const { color, bgcolor } = require('./lib/color')
 const { bahasa } = require('./src/bahasa')
 const { negara } = require('./src/kodenegara')
@@ -28,7 +28,7 @@ const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
 const { ind } = require('./language')
 
-// Muat Paket Npm
+// Load Npm Package
 const fs = require('fs')
 const moment = require('moment-timezone')
 const { exec } = require('child_process')
@@ -46,7 +46,7 @@ const crypto = require('crypto')
 const qrcode = require("qrcode-terminal")
 const axios = require('axios')
 
-// Muat File Js
+// Load Json File
 const welkom = JSON.parse(fs.readFileSync('./database/json/welkom.json'))
 const nsfw = JSON.parse(fs.readFileSync('./database/json/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./database/json/simi.json'))
@@ -57,7 +57,8 @@ const _limit = JSON.parse(fs.readFileSync('./database/json/limit.json'))
 const uang = JSON.parse(fs.readFileSync('./database/json/uang.json'))
 const _registered = JSON.parse(fs.readFileSync('./database/json/registered.json'))
 
-// Menu File
+
+// Load Menu File
 const { help } = require('./database/menu/help')
 const { logomaker } = require('./database/menu/logomaker')
 const { adult } = require('./database/menu/adult')
@@ -74,19 +75,25 @@ const { music } = require('./database/menu/music')
 const { other } = require('./database/menu/other')
 const { owner } = require('./database/menu/owner')
 const { search } = require('./database/menu/search')
+const { sound } = require('./database/menu/sound')
+const { stalk } = require('./database/menu/stalk')
+const { stayonscreen } = require('./database/menu/stayonscreen')
 const { stickermaker } = require('./database/menu/stickermaker')
 const { tod } = require('./database/menu/tod')
 const { wibu } = require('./database/menu/wibu')
+/*const { xp } = require('./database/menu/xp')
+const { limit } = require('./database/menu/limit*/
 
 // Load Vcard Contact
-const vcard = 'BEGIN:VCARD\n' // metadata dari kartu kontak
-            + 'FN:Vio rian\n' // Nama lu isi sendiri nanti
-            + 'ORG:VIO-RIAN;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=62812920913647:+62 812-9209-1364\n' 
+const vcard = 'BEGIN:VCARD\n' // asoe
+            + 'VERSION:3.0\n' 
+            + 'FN:Vio-rian\n' // asoe
+            + 'ORG:Owner Bot;\n' // asoe
+            + 'TEL;type=CELL;type=VOICE;waid=12542123926:+62 812-9209-1364\n' // WhatsApp ID + pnomerhp
             + 'END:VCARD'
-prefix = '.' // ubah je
+prefix = '.'
 blocked = []
-limitawal = '20' // ubah je
+limitawal = '20'
 cr = '*Verified*'
 
 // Functions
